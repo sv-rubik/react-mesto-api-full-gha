@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 const { errors } = require('celebrate');
 
 const { PORT = 3000, BASE_PATH = 'localhost' } = process.env;
+const cors = require('cors');
 
 // защита приложения
 const helmet = require('helmet');
@@ -17,6 +18,7 @@ const limiter = rateLimit({
 });
 
 const app = express();
+app.use(cors());
 const errorsHandler = require('./middlewares/errorsHandler');
 const userRouter = require('./routes/users');
 const cardRouter = require('./routes/cards');

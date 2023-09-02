@@ -9,7 +9,7 @@ const NotFoundError = require('../utils/errors/NotFoundError'); // 404
 // Получить список всех карточек
 const getCardsList = (req, res, next) => {
   Card.find({})
-    .then((cardsList) => res.status(200).send({ data: cardsList }))
+    .then((cardsList) => res.status(200).send(cardsList)) // { data: cardData }
     .catch((err) => next(err));
 };
 
@@ -17,7 +17,7 @@ const getCardsList = (req, res, next) => {
 const createCard = (req, res, next) => {
   const { name, link } = req.body;
   Card.create({ name, link, owner: req.user._id })
-    .then((cardData) => res.status(201).send({ data: cardData }))
+    .then((cardData) => res.status(201).send(cardData)) // { data: cardData }
     .catch((err) => {
       if (err instanceof mongoose.Error.ValidationError) {
         next(new BadRequestError('Переданы некорректные данные'));
@@ -57,7 +57,7 @@ const likeCardByID = (req, res, next) => {
     .orFail()
     .then((currentCard) => {
       if (currentCard) {
-        res.send({ data: currentCard });
+        res.send(currentCard); // { data: currentCard }
       } else { next(new NotFoundError('Карточка не найдена')); }
     })
     .catch((err) => {
@@ -77,7 +77,7 @@ const deleteLikeFromCard = (req, res, next) => {
     { new: true },
   )
     .orFail()
-    .then((currentCard) => res.send({ data: currentCard }))
+    .then((currentCard) => res.send(currentCard)) // { data: currentCard }
     .catch((err) => {
       if (err instanceof mongoose.Error.CastError) {
         next(new BadRequestError('Передан некорректный ID'));

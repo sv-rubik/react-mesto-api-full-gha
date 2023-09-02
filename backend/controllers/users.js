@@ -13,7 +13,7 @@ const ConflictError = require('../utils/errors/ConflictError'); // 409
 // метод send принимает только один аргумент (обычно это строка или объект)
 const getUserList = (req, res, next) => {
   User.find({})
-    .then((usersList) => res.send({ data: usersList }))
+    .then((usersList) => res.send(usersList)) // { data: usersList }
     .catch(next);
 };
 
@@ -22,7 +22,7 @@ const getUserList = (req, res, next) => {
 const getUserByID = (req, res, next) => {
   User.findById(req.params.userId)
     .orFail()
-    .then((currentUser) => res.status(200).send({ data: currentUser }))
+    .then((currentUser) => res.status(200).send(currentUser)) //{ data: currentUser }
     .catch((err) => {
       if (err instanceof mongoose.Error.CastError) {
         next(new BadRequestError('Некорректный id'));
@@ -80,7 +80,7 @@ const updateUserProfile = (req, res, next) => {
     runValidators: true,
   })
     .orFail()
-    .then((updatedUserData) => res.status(200).send({ data: updatedUserData }))
+    .then((updatedUserData) => res.status(200).send(updatedUserData)) //{ data: updatedUserData }
     .catch((err) => {
       if (err instanceof mongoose.Error.ValidationError) {
         next(new BadRequestError('Переданы некорректные данные'));
@@ -98,7 +98,7 @@ const updateUserAvatar = (req, res, next) => {
     runValidators: true,
   })
     .orFail()
-    .then((updatedUserAvatar) => res.status(200).send({ data: updatedUserAvatar }))
+    .then((updatedUserAvatar) => res.status(200).send(updatedUserAvatar)) //{ data: updatedUserAvatar }
     .catch((err) => {
       if (err instanceof mongoose.Error.ValidationError) {
         next(new BadRequestError('Переданы некорректные данные'));
@@ -113,7 +113,7 @@ const getUserProfile = (req, res, next) => {
   User.findById(req.user._id)
     .orFail()
     .then((currentUser) => {
-      res.status(200).send({ data: currentUser });
+      res.status(200).send(currentUser); // { data: currentUser }
     })
     .catch((err) => {
       if (err instanceof mongoose.Error.CastError) {
