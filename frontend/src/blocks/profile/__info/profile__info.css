@@ -1,0 +1,17 @@
+.profile__info {
+  max-width: 450px;
+  display: grid;
+  grid-template-columns: auto 24px;
+  gap: 16px 18px;
+  grid-template-areas: "name button" "description .";
+  align-items: end;
+  margin: 0 0 0 30px;
+}
+
+@media screen and (max-width: 979px) {
+  .profile__info {
+    margin: 26px 19px 0;
+    gap: 14px 10px;
+    grid-template-areas: "name button" "description description";
+  }
+}
