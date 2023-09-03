@@ -8,9 +8,8 @@
 Адрес репозитория: https://github.com/sv-rubik/react-mesto-api-full-gha
 
 ## Ссылки на проект
-
 IP 158.160.120.107
 
-Frontend https://sv-rubik-mesto.nomoredomains.work/
+Frontend http://sv-rubik-mesto.nomoredomainsicu.ru/
 
-Backend https://api.sv-rubik-mesto.nomoredomains.work/
+Backend http://api.sv-rubik-mesto.nomoredomainsicu.ru/
