@@ -37,7 +37,7 @@ app.use(limiter);
 
 mongoose.connect('mongodb://127.0.0.1:27017/mestodb');
 
-// Добавляем middleware для разбора JSON, сначала установив body-parser
+// Добавляем middleware для разбора JSON
 app.use(express.json());
 
 // Логирование запросов - до всех обработчиков роутов
