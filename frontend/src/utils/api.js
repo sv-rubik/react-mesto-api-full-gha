@@ -138,7 +138,7 @@ class Api {
 
 ////// TODO
 export const api = new Api({
-  baseUrl: 'https://api.sv-rubik-mesto.nomoredomainsicu.ru',
+  baseUrl: 'https://api.sv-rubik-mesto.nomoredomainsicu.ru/',
   headers: {
     'Content-Type': 'application/json'
   }
