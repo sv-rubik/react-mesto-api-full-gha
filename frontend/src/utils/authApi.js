@@ -55,4 +55,5 @@ class AuthApi {
 }
 ////// TODO
 // export const authApi = new AuthApi('https://auth.nomoreparties.co')
-export const authApi = new AuthApi('http://localhost:3000')
+// export const authApi = new AuthApi('http://localhost:3000')
+export const authApi = new AuthApi('https://api.sv-rubik-mesto.nomoredomains.work')

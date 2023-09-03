@@ -138,7 +138,7 @@ class Api {
 
 ////// TODO
 export const api = new Api({
-  baseUrl: 'http://localhost:3000/',
+  baseUrl: 'https://api.sv-rubik-mesto.nomoredomains.work',
   headers: {
     'Content-Type': 'application/json'
   }
