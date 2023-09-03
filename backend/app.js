@@ -6,7 +6,7 @@ const { errors } = require('celebrate');
 
 const { PORT = 3000, BASE_PATH = 'localhost' } = process.env;
 const cors = require('cors');
-console.log(process.env.NODE_ENV);
+
 // защита приложения
 const helmet = require('helmet');
 const rateLimit = require('express-rate-limit');
