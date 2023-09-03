@@ -2,6 +2,7 @@ const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 
+const { NODE_ENV, JWT_SECRET } = process.env;
 // импорт модели user, сделанной по схеме userSchema
 const User = require('../models/user');
 
@@ -62,7 +63,7 @@ const login = (req, res, next) => {
       // генерация токена
       const token = jwt.sign(
         { _id: currentUser._id },
-        'token-secret-key',
+        NODE_ENV === 'production' ? JWT_SECRET : 'token-secret-key',
         { expiresIn: '7d' },
       );
       res.send({ token });
