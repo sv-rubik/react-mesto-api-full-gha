@@ -41,6 +41,12 @@ app.use(express.json());
 // Логирование запросов - до всех обработчиков роутов
 app.use(requestLogger);
 
+app.get('/crash-test', () => {
+  setTimeout(() => {
+    throw new Error('Сервер сейчас упадёт');
+  }, 0);
+});
+
 // Регистрация и логин (с валидацией Celebrate)
 app.post('/signin', validateLogin, login);
 app.post('/signup', validateCreateUser, createUser);
