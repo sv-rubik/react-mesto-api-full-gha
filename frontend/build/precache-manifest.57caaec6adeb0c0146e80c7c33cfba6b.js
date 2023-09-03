@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "a1a109e9e945dbcecd97",
+    "revision": "7173b5e5a03904389e6c",
     "url": "./static/css/main.d23fcf8e.chunk.css"
   },
   {
-    "revision": "a1a109e9e945dbcecd97",
-    "url": "./static/js/main.80c240cf.chunk.js"
+    "revision": "7173b5e5a03904389e6c",
+    "url": "./static/js/main.83ab6085.chunk.js"
   },
   {
     "revision": "8c97409f0ee389fe75da",
@@ -16,8 +16,8 @@ self.__precacheManifest = [
     "url": "./static/js/2.463a01a9.chunk.js"
   },
   {
-    "revision": "d0b121f3a9d3d88afdfd6902d31ee9a0",
-    "url": "./static/media/Inter-Black.d0b121f3.woff"
+    "revision": "dc131113894217b5031000575d9de002",
+    "url": "./static/media/Inter-Regular.dc131113.woff2"
   },
   {
     "revision": "75db5319e7e87c587019a5df08d7272c",
@@ -28,28 +28,24 @@ self.__precacheManifest = [
     "url": "./static/media/Inter-Regular.3ac83020.woff"
   },
   {
-    "revision": "dc131113894217b5031000575d9de002",
-    "url": "./static/media/Inter-Regular.dc131113.woff2"
+    "revision": "c0638bea87a05fdfa2bb3bba2efe54e4",
+    "url": "./static/media/Inter-Medium.c0638bea.woff"
   },
   {
     "revision": "bdfb8ebb113b9312e080c2f4b4213223",
     "url": "./static/media/plus.bdfb8ebb.svg"
   },
   {
-    "revision": "c8252db2902c59bff2cb619de2b75c2f",
-    "url": "./static/media/edit-icon.c8252db2.svg"
-  },
-  {
     "revision": "661569afe57a38e1529a775a465da20b",
     "url": "./static/media/Inter-Black.661569af.woff2"
   },
   {
-    "revision": "34c4685038e8cf551566cb4ee96e20e5",
-    "url": "./static/media/avatar-edit-icon.34c46850.svg"
+    "revision": "c8252db2902c59bff2cb619de2b75c2f",
+    "url": "./static/media/edit-icon.c8252db2.svg"
   },
   {
-    "revision": "45a5fb8f7d30bc622e58a6fca1e99da1",
-    "url": "./static/media/close-icon.45a5fb8f.svg"
+    "revision": "34c4685038e8cf551566cb4ee96e20e5",
+    "url": "./static/media/avatar-edit-icon.34c46850.svg"
   },
   {
     "revision": "933106eaf93ffbb3807048cfeeecbcef",
@@ -64,8 +60,12 @@ self.__precacheManifest = [
     "url": "./static/media/delete-icon.9c3b03ae.svg"
   },
   {
-    "revision": "c0638bea87a05fdfa2bb3bba2efe54e4",
-    "url": "./static/media/Inter-Medium.c0638bea.woff"
+    "revision": "45a5fb8f7d30bc622e58a6fca1e99da1",
+    "url": "./static/media/close-icon.45a5fb8f.svg"
+  },
+  {
+    "revision": "d0b121f3a9d3d88afdfd6902d31ee9a0",
+    "url": "./static/media/Inter-Black.d0b121f3.woff"
   },
   {
     "revision": "223359275f4bedbe62175da6ebac13d5",
@@ -80,7 +80,7 @@ self.__precacheManifest = [
     "url": "./static/media/crossIcon.c32299fa.svg"
   },
   {
-    "revision": "4e06a852f1dafa0f58f0d126e83d063e",
+    "revision": "2713247fc0fcccc670e7eac4743fa8a6",
     "url": "./index.html"
   }
 ];
