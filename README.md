@@ -13,3 +13,9 @@ IP 158.160.120.107
 Frontend http://sv-rubik-mesto.nomoredomainsicu.ru/
 
 Backend http://api.sv-rubik-mesto.nomoredomainsicu.ru/
+
+## Инструкция по установке:
+
+Клонировать репозиторий https://github.com/sv-rubik/react-mesto-api-full-gha.git
+Установить зависимости: cd react-mesto-api-full, npm install
+Запустить приложение в режиме разработки: npm run start, npm run dev
